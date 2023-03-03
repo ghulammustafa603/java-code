@@ -1,0 +1,39 @@
+import java.util.Random;
+public class Question1
+{
+   public static void main (String args[])
+   {
+       Random ran=new Random();
+       int arr1[]=new int[3];
+       for(int i=0; i<3; i++)
+       {
+
+           arr1[i]=ran.nextInt(10);
+           if(arr1[i]==8 || arr1[i]==9)
+           {
+               arr1[i]=ran.nextInt(8);
+           }
+       }
+       for(int i=0; i<3; i++)
+       {
+           System.out.print(arr1[i]);
+
+       }
+       System.out.print("-");
+     int num3;
+     num3=ran.nextInt(100,831);
+       System.out.print(num3);
+       System.out.print("-");
+       int arr3[]=new int[4];
+       for(int i=0; i<4; i++)
+       {
+           arr3[i]=ran.nextInt(1,10);
+       }
+       for(int i=0; i<4; i++)
+       {
+           System.out.print(arr3[i]);
+
+       }
+
+   }
+}
