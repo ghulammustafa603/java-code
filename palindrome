@@ -1,0 +1,41 @@
+import java.util.Scanner;
+import java.lang.String;
+public class Question4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str="";
+        String arr1[] = new String[5];
+        System.out.println("Input:");
+        System.out.println("Enter any five words to check palindrome or not.");
+    
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Enter word " + (i + 1) + ":");
+            str= scanner.next();
+            arr1[i]=str;
+
+        }
+        System.out.println("OUTPUT");
+        System.out.println("===================");
+        System.out.println("Word    Palindrome ");
+        System.out.println("===================\n");
+        for (int i = 0; i < 5; i++) {
+            System.out.print(arr1[i]);
+            arr1[i]=arr1[i].toLowerCase();
+            inner:
+            for(int k=0;k<=arr1[i].length();k++){
+
+                for (int j = arr1[i].length() - 1; j >= 0; j--) {
+                    if (arr1[i].charAt(k)==arr1[i].charAt(j)) {
+                        System.out.print("\t\tYes\n");
+                    }
+                    else {
+                        System.out.print("\t\tNo\n");
+                    }
+                break inner;
+                }
+
+            }
+        }
+    }
+}
