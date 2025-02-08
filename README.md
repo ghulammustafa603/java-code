@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Java Programs Collection
 
@@ -43,3 +44,7 @@ Feel free to fork this repository and contribute by adding your own Java program
 ## License:
 
 This repository is open source and available under the [MIT License](LICENSE).
+=======
+# java-code
+my java coding
+>>>>>>> d45287a (addition of more java programs)

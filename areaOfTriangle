@@ -5,11 +5,19 @@ public class Question3
    public static void main (String args[])
    {
        Scanner input=new Scanner(System.in);
+<<<<<<< HEAD
        System.out.println("Enter the length of first side of triangle:");
        double a=input.nextDouble();
        System.out.println("Enter the length of second side of triangle:");
        double b=input.nextDouble();
        System.out.println("Enter the length of third side of triangle:");
+=======
+       System.out.println("Enter the length of 1st side of triangle:");
+       double a=input.nextDouble();
+       System.out.println("Enter the length of 2nd side of triangle:");
+       double b=input.nextDouble();
+       System.out.println("Enter the length of 3rd side of triangle:");
+>>>>>>> d45287a (addition of more java programs)
        double c=input.nextDouble();
        double s=(a+b+c)/2;     //s is semi perimeter
        double areaOfTriangle=Math.sqrt(s*(s-a)*(s-b)*(s-c));
